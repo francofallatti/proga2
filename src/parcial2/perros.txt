@@ -1,0 +1,16 @@
+public boolean leGustaSalirAPasearCon(Perro otroPerro) {
+	if(otroPerro instanceof Caniche) {
+		return false;
+		}
+			return true;
+		}	
+
+se debe implementar de la siguiente forma en todas las clases cambiando el objeto de comparacion Caniche, por Cocker, etc.
+@Override
+public boolean leGustaSalirAPasearCon(Perro otroPerro) {
+	if(otroPerro instanceof Caniche) {
+		return false;
+	}
+	return true;
+}
+Se sobreescribe el metodo, ya que el metodo compara el objeto heredado en particular con el recibido por eso no puede estar en la clase padre, sino daria false siempre.	
